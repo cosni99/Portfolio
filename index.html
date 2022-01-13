@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>Portfolio</title>
+    <meta name="description" content="ポートフォリオ">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  </head>
+<style>
+html {
+  font-size: 100%;
+}
+body {
+  color: #24292e;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+li {
+  list-style: none;
+}
+
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto 130px auto;
+  font-size: 0.9rem;
+  padding: 0 4%;
+}
+.site-title {
+  line-height: 1px;
+}
+.site-title a {
+  display: block;
+}
+.sec-title {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 65px;
+}
+
+/*-------------------------------------------
+ヘッダー
+-------------------------------------------*/
+#header {
+  max-width: 960px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 270px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+#header ul {
+  display: flex;
+  padding: 10px 0;
+}
+#header li {
+  font-size: 0.9rem;
+  margin-left: 30px;
+}
+#header li a {
+  color: #24292e;
+}
+#header li a:hover {
+  opacity: 0.7;
+}
+#header li img.icon {
+  width: 20px;
+}
+.ablack{
+  color:#24292e;
+}
+/*-------------------------------------------
+Mainvisual
+-------------------------------------------*/
+#mainvisual {
+  margin-bottom: 80px;
+}
+#mainvisual img {
+  width: 100%;
+  max-width: 1920px;
+  height: 420px;
+  object-fit: cover;
+}
+
+
+/*-------------------------------------------
+Works
+-------------------------------------------*/
+#works ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+#works li {
+  width: 31%;
+  margin-bottom: 23px;
+}
+
+
+dl {
+  display: flex;
+  flex-wrap: wrap;
+  border-top: solid 1px #c8c8c8;
+  margin-bottom: 20px;
+}
+dt {
+  width: 25%;
+  border-bottom: solid 1px #c8c8c8;
+  padding: 15px;
+}
+dd {
+  width: 75%;
+  border-bottom: solid 1px #c8c8c8;
+  padding: 15px;
+}
+
+
+/*-------------------------------------------
+フッター
+-------------------------------------------*/
+#footer {
+  background-color: #24292e;
+  color: #fff;
+  font-size: 0.5rem;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+/*-------------------------------------------
+SP
+-------------------------------------------*/
+@media screen and (max-width: 600px) {
+  .wrapper {
+    margin-bottom: 70px;
+  }
+  .site-title {
+    margin-top: 20px;
+  }
+  .sec-title {
+    margin-bottom: 40px;
+  }
+
+  /*-------------------------------------------
+  ヘッダー
+  -------------------------------------------*/
+  #header {
+    max-width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+  #header li {
+    font-size: 0.8rem;
+    margin-left: 20px;
+  }
+  #header li:first-child {
+    margin-left: 0;
+  }
+
+  /*-------------------------------------------
+  Works
+  -------------------------------------------*/
+  #works ul {
+    flex-direction: column;
+  }
+  #works li {
+    width: 100%;
+  }
+
+
+  dl {
+    flex-direction: column;
+  }
+  dt {
+    width: 100%;
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  dd {
+    width: 100%;
+    padding-top: 0;
+  }
+
+}
+</style>
+
+  <body>
+    <header id="header">
+      <h1 class="site-title"><a class="ablack" href="index.html">Portfolio</a></h1>
+      <nav>
+        <ul>
+          <li><a href="#works">Create</a></li>
+          <li><a href="#aside">aside</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div id="mainvisual">
+        <picture>
+          <img src="pfimg/business-g81811a6b6_1920.jpg" alt="トップ画像">
+        </picture>
+      </div>
+
+      <section id="works" class="wrapper">
+        <h2 class="sec-title">Create</h2>
+        <ul>
+          <li><a href="11shop/index.php"><img src="pfimg/shop.jpg" alt="PHP shop">PHP shop制作</a></li>
+          <li><a href="11shop/admin/index.php"><img src="pfimg/admin.jpg" alt="shop管理画面">shop管理画面</a></li>
+          <li><a href="wordpress/"><img src="pfimg/wp.jpg" alt="WordPressテーマ">WordPressテーマ制作</a></li>
+          <li><a href="sd/"><img src="pfimg/sd.jpg" alt="オリジナルサイト">オリジナルサイト制作</a></li>
+          <li><a href="http://mameshop.wp.xdomain.jp/"><img src="pfimg/kare.jpg" alt="css">css</a></li>
+          <li><a href="web/index.html"><img src="pfimg/html.jpg" alt="html制作">html</a></li>
+        </ul>
+      </section>
+
+      <section id="aside" class="wrapper">
+        <h2 class="sec-title">aside</h2>
+        <dl>
+          <dt>PHP shop制作</dt>
+          <dd>PHPでプログラミングしたショップ例</dd>
+          <dt>shop管理画面</dt>
+          <dd>SQLを学習したショップの管理画面</dd>
+          <dt>WordPressテーマ制作</dt>
+          <dd>WordPressオリジナルテンプレート作成学習</dd>
+          <dt>オリジナルサイト制作</dt>
+          <dd>php,javascript,css,Wordpress総合学習</dd>
+          <dt>css</dt>
+          <dd>css学習</dd>
+          <dt>html</dt>
+          <dd>htmlタグ学習</dd>
+        </dl>
+      </section>
+
+    </main>
+
+    <footer id="footer">
+      <p>&copy; Portfolio</p>
+    </footer>
+
+  </body>
+
+</html>
